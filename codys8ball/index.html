@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cody Chow's Magic 7/10 Ball</title>
+<meta charset="utf-8">
+<style>
+body {background-image: url(background.jpg);
+      font-family: Arial, Verdana, sans-serif;
+}
+h1 { background-image: url(codster.jpg);
+     background-repeat: no-repeat;
+     height: 236px; width: 204px;
+     font-size: 3em; 
+     padding-left: 250px; padding-top: 3px;
+     border: 1px solid #000033;
+     border-radius: 15px; 
+}
+h2 { color: #000033; 
+     font-family: arial, sans-serif;
+}
+
+footer { font-size: .80em;
+          font-style: italic;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Cody Chow's Magic 7/10 Ball</h1>
+<script>
+   
+
+   // Possible Ball responses
+   var responses = [ "You don't need to speak the same language to understand love." ,"Yo, I like that.", "Yo thots?", "Yo, I don't know about that.", "It is what it is.", "It is in unity that we find strength, in unity we find hope, and in unity we can stand firm as the darkness approaches. Let us stand together – and stand firm – against the many faces of hate.", "Yo, I'm going in.", "Social media websites are no longer performing an envisaged function of creating a positive communication link among friends, family and professionals. It is a veritable battleground, where insults fly from the human quiver, damaging lives, destroying self-esteem and a person's sense of self-worth.", "Bushido is realized in the presence of death. This means choosing death whenever there is a choice between life and death. There is no other reasoning." ];
+
+   // Display a randomly chosen response
+   var randomNum = Math.floor(Math.random() * responses.length);
+  document.writeln("Cody says... <strong>" + responses[randomNum]);
+
+   </script>
+   <br>
+   <br>
+   <input type="button" value="Initiate again!" onClick="window.location.reload()">
+</body>
+</html>
